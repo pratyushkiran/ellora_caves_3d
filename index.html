@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Raja Rani Temple</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- Loading Indicator -->
+    <div id="loading-container">
+      <img
+        id="loading-wheel"
+        src="assets/konark wheel loader.png"
+        alt="Loading..."
+      />
+    </div>
+
+    <!-- <div id="controls-container">
+      <button id="wheelView" aria-label="View temple wheel">Wheel View</button>
+      <button id="topView" aria-label="View temple from top">Top View</button>
+      <button id="frontView" aria-label="View temple from front">
+        Front View
+      </button>
+      <button id="sideView" aria-label="View temple from side">
+        Side View
+      </button>
+    </div> -->
+
+    <!-- Three.js Scene -->
+    <div id="threejs-container"></div>
+
+    <!-- Gradient Section -->
+    <section class="gradient-section">
+      <h1>ELLORA CAVES</h1>
+    </section>
+
+    <!-- Main Content -->
+    <section class="main-content">
+      <p class="intro">
+        The Ellora Caves, located in Maharashtra, India, are a UNESCO World Heritage site renowned for their rock-cut architecture. Dating from the 6th to 10th centuries CE, these 34 caves showcase a stunning blend of Hindu, Buddhist, and Jain temples and monasteries. The most famous, Cave 16 (Kailasa Temple), is an intricately carved monolithic structure dedicated to Lord Shiva. The caves are celebrated for their artistic and architectural significance, attracting visitors from around the world.
+      </p>
+
+      <!-- Side-by-Side Container -->
+      <div class="side-by-side">
+        <!-- Map -->
+        <div class="map">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d18196.276241282292!2d75.16772490559678!3d20.02575325090467!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3bdb93bd138ae4bd%3A0x574c6482cf0b89cf!2sEllora%20Caves!5e1!3m2!1sen!2sin!4v1743762291836!5m2!1sen!2sin"
+            width="100%"
+            height="300"
+            style="border: 0"
+            allowfullscreen="true"
+            loading="lazy"
+          >
+          </iframe>
+
+        </div>
+
+        <!-- Photo Gallery -->
+        <div class="gallery">
+          <img
+            src="assets/Temple Images/1.jpg"
+            alt="Ellora Caves Image 1"
+          />
+          <img
+            src="assets/Temple Images/2.jpg"
+            alt="Ellora Caves Image 2"
+          />
+          <img
+            src="assets/Temple Images/3.jpg"
+            alt="Ellora Caves Image 3"
+          />
+          <img
+            src="assets/Temple Images/4.webp"
+            alt="Ellora Caves Image 4"
+          />
+          <img
+            src="assets/Temple Images/5.jpg"
+            alt="Ellora Caves Image 5"
+          />
+          <img
+            src="assets/Temple Images/6.jpg"
+            alt="Ellora Caves Image 6"
+          />
+          <img
+            src="assets/Temple Images/7.jpg"
+            alt="Ellora Caves Image 7"
+            />
+            <img
+            src="assets/Temple Images/4.webp"
+            alt="Ellora Caves Image 4"
+          />
+          <img
+            src="assets/Temple Images/5.jpg"
+            alt="Ellora Caves Image 5"
+          />
+          
+      </div>
+
+      <!-- <div class="tripadvisorcomponentUISample">
+        <img src="assets/Webpage Design UI/image1.png" alt="" />
+        <img src="assets/Webpage Design UI/image2.png" alt="" />
+        <img src="assets/Webpage Design UI/image3.png" alt="" />
+        <img src="assets/Webpage Design UI/image4.png" alt="" />
+      </div> -->
+    </section>
+
+    <!-- Scripts -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r134/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134/examples/js/loaders/GLTFLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134/examples/js/loaders/DRACOLoader.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134/examples/js/controls/OrbitControls.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.134/examples/js/loaders/RGBELoader.js"></script>
+
+    <!-- For HDRI -->
+    <script type="module" src="scripts.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+  </body>
+</html>
